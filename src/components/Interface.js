@@ -38,21 +38,34 @@ class Interface extends HTMLElement {
         // TAMANHO PARA CELULAR PRIMEIRAMENTE
         
         style.textContent = `
+        .result {
+            background-color: #31363F;
+            width: 100%;
+            height: 17%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
         .result h1 {
             color: white;
+            margin: 10px;
+            font-size: 3rem;
         }
         .container {
             width: 80vw;
         }
         .calculadora {
-            width: 85vw;
-            height: 80vh;
-            background-color: green;
-            margin: 25% auto;
+            width: 60vw;
+            height: 60vh;
+            background-color: #222831;
+            margin: 27% auto;
+            border-radius: 3%;
+            padding: 20px;
         }
         `
         return style;
     }
 }
 
-customElements.define("calculadora-ios", Interface);
+customElements.define("calculadora-interface", Interface);
