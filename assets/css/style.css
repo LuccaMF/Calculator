@@ -5,3 +5,40 @@
 body {
     background-color: rgb(51, 51, 51);
 }
+.container {
+    background-color: #222831;
+    margin: 10% auto;
+    border-radius: 3%;
+    padding: 20px;
+    max-width: 50vw;
+    height: 80vh;
+}
+.result {
+    background-color: #31363F;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.result h1 {
+    color: white;
+    font-size: 3rem;
+    margin-right: 15px;
+}
+.buttons {
+    height: 100%;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+.buttons input.maior {
+    grid-column: 1 /span 2;
+}
+.buttons input.zero {
+    grid-column: 1 /span 2;
+}
